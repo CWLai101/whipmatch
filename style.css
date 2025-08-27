@@ -1,0 +1,348 @@
+.titleScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.titleContent {
+    text-align: center;
+}
+h1 {
+    color: rgb(44, 122, 159);
+    text-shadow: 4px 1px 2px rgb(20, 70, 110);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 7rem;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(1.5) scaleX(1.2);
+
+}
+h3 {
+    text-align: center;
+    position: absolute;
+    top: 60%;  /* Position below h1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+h2 {
+    text-align:center;
+    font-size: 2.5rem;
+
+
+
+}
+
+p {
+    text-align: center;
+
+}
+h4 {
+    text-align: center;
+}
+
+.menubuttons  {
+    position: absolute;  /* Position buttons separately */
+    bottom: 150px;  /* Place near bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+}
+
+.menubuttons button {
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 20px; 
+        padding: 15px 30px;
+        border-radius: 15px;
+        margin: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.menubuttons button:hover {
+    background-color: rgb(43, 116, 185);
+    transform: scale(1.05);
+}
+
+.goBackContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.goBackContainer button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px; 
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.goBackContainer button:hover {
+    background-color: rgb(43, 116, 185);
+    transform: scale(1.05);
+}
+
+.countryRandomContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 5px;
+    min-height: 100vh;
+    margin-top: 0;
+}
+.countryRandomContainer h1 {
+    font-size: 2.5rem;  /* Smaller than the main title */
+    margin-bottom: 30px;
+    position: static;   /* Override the absolute positioning */
+    transform: none;    /* Remove transform */
+    top: auto;          /* Reset positioning */
+    left: auto;         /* Reset positioning */
+}
+
+
+.countryRandomContainer button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px; 
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.countryRandomContainer button:hover {
+    background-color: rgb(43, 116, 185);
+    transform: scale(1.05);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+#flagSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#flagSection h2 {
+    position: static !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: none !important;   
+    top: auto !important;         
+    left: auto !important;        
+    font-size: 2.5rem; 
+    margin-bottom: 30px;
+    margin-top: 250px;
+    color: rgb(0, 0, 0);
+
+}
+#gameSection h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+#countryTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+
+}
+
+
+.flagpageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    transition: 200ms;
+
+}
+
+.flagpageContainer button {
+    justify-content: center;
+}
+.flagpageContainer:hover {
+    transform:scale(110%);
+    transition: 200ms;
+}
+
+#flagSection .goBackBtn {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px; 
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+#flagSection .goBackBtn:hover {
+    background-color: rgb(43, 116, 185);
+    transform: scale(1.05);
+}
+.carGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 24px;
+
+}
+#carPrompt {
+    text-align: center;
+    margin: 30px auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+#scoreDisplay {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+#gameSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+
+.car-card {
+    text-align: center;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    cursor: pointer;
+    transition: 200ms;
+
+}
+
+.car-card:hover {
+    transform:scale(110%);
+    transition: 200ms;
+}
+  
+.car-card img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#gameBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    padding-top: 120px; 
+
+
+}
+
+#goBackCountryBtn {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px; 
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: block;
+}
+#goBackCountryBtn:hover {
+    background-color: rgb(43, 116, 185);
+    transform: scale(1.05);
+}
+.driftimagecontainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.finalbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.finalbuttons button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px; 
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.finalbuttons button:hover {
+    background-color: rgb(43, 116, 185);
+    transform: scale(1.05);
+}
+
+#gameCompleteTitle {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    padding-top: 120px;
+    color: rgb(44, 122, 159);
+    text-shadow: 2px 1px 2px rgb(20, 70, 110);
+    position: static !important;
+    transform: none !important;
+}
+
+
+#aboutSection {
+    /* justify-content: center; */
+    padding-top: 200px;
+    max-width: 600px;
+    margin: 0 auto;
+}
